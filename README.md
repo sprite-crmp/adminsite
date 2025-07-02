@@ -1,5 +1,5 @@
 # adminsite
-![alt text]([https://raw.githubusercontent.com/sprite-crmp/webhost/refs/heads/main/adminsite.jpg]))
+![alt text](https://raw.githubusercontent.com/sprite-crmp/webhost/refs/heads/main/adminsite.jpg)
 
 Сливаю вам мой личный админ сайт. На сайт вы сможете зайти если только на вашем игровом аккаунте минимум админка 1 уровня. Сайт сделан под 6 уровней админки. Думаю на 13 уровневой никто уже не сидит. Сайт можете дополнять, я буду продолжать его разработку.
 
