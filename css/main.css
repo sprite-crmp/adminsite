@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Основные настройки */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: 'Nunito Sans', 'sans-serif';
+    background-color:aliceblue;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 0;
+}
+h1 {
+    transform: translateY(-25%);
+    float: right;
+    color:rgb(0, 0, 0);
+    margin: 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+h2 {
+    color: brown;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+h3 {
+    color: black;
+    font-size: 20px;
+}
+strong {
+    font-weight: 600;
+}
+/* Шапка */
+.header {
+    margin: 5px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color:white;
+}
+.header-ico {
+    float: right;
+    transform: translate(-35%, -25%);
+}
+.adminpaneltext {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgba(240, 248, 255, 0);
+    border: 0px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+/* SideBar */
+@media (min-width: 601px) {
+    .side-panel {
+        width: 280px;
+        background-color: white;
+        color: white;
+        padding: 20px;
+        margin: 5px;
+        height: 89vh;
+        border-radius: 10px;
+        overflow-y: scroll;
+    }
+    .menu li:is(:hover, .active) {
+        background: rgba(87, 165, 255, 0.671);
+    }
+}
+
+.sidebar-toggle {
+    display: none;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    margin-bottom: 1px;
+    border-radius: 10px;
+    padding: 10px 12px;
+    transition: 0.3s ease;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* DashBoard */
+.sprite_author {
+    height: max-content;
+    width: max-content;
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(87, 165, 255, 0.671);
+    font-size: 18px;
+    transform: rotate(0deg);
+    margin-left: auto;
+    transition: all 0.5s ease;
+}
+.sprite_author:hover {
+    background: rgba(87, 165, 255, 0.377);
+}
+.dashboard {
+    position: fixed;
+    overflow-y: scroll;
+    right: 5px;
+    bottom: 5px;
+    left: 295px;
+    top: 95px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    row-gap: 1ch;
+    column-gap: 10px;
+    animation-name: move-computer;  
+    animation-duration: 0.5s;  
+    animation-iteration-count: 1;  
+    animation-direction: alternate;
+}
+.window_one {
+    width: max-content;
+    height: max-content;
+    min-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+.window_two {
+    width: max-content;
+    height: max-content;
+    min-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.4s ease;
+}
+.window_two-button {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(205 205 205 / 0%);
+    font-size: 20px;
+    transform: rotate(0deg);
+    margin-left: auto;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.window_two-button.rotated {
+    transform: rotate(180deg);
+}
+.admin-list ul {
+    list-style-type: none;
+}
+.admin-list ul.collapsed {
+    display: none;
+}
+.window_three {
+    width: max-content;
+    height: max-content;
+    min-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.4s ease;
+}
+.window_three_cont {
+    width: max-content;
+    height: max-content;
+    border-radius: 15px;
+    background-color: rgba(238, 0, 0, 0);
+    transition: all 0.4s ease;
+}
+.window_three_cont.collapsed {
+    display: none;
+}
+.window_three-button {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(205 205 205 / 0%);
+    font-size: 20px;
+    transform: rotate(0deg);
+    margin-left: auto;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.window_three-button.rotated {
+    transform: rotate(180deg);
+}
+.promo-list ul {
+    list-style-type: none;
+}
+
+/*! Адаптация */
+@media (max-width: 600px) {  
+    /* Шапка */
+    .header {
+        margin: 5px;
+        padding: 40px;
+        border-radius: 20px;
+        background-color:white;
+    }
+    .header-ico {
+        float: right;
+        transform: translate(-45%, -45%);
+    }
+    h1 {
+        transform: translateY(-45%);
+        float: left;
+        color:rgb(0, 0, 0);
+        margin: 0px;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .adminpaneltext {
+        display: none
+    }
+    .side-panel.collapsed {
+        transform: translateX(-120%);
+    }
+    .sidebar-toggle {
+        height: 50px;
+        width: 50px;
+        border: none;
+        position: absolute;
+        right: 55px;
+        margin-top: 14px;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(142, 194, 255);
+        font-size: 20px;
+        z-index: 10;
+        transition: all 0.3s ease;
+    }
+    .sidebar-toggle.rotated {
+        transform: rotate(180deg);
+    }
+    .side-panel {
+        position: relative;
+        width:auto;
+        background-color: white;
+        color: white;
+        padding: 20px;
+        margin: 5px;
+        height: 89vh;
+        border-radius: 10px;
+        overflow-y: scroll;
+        transition: all 0.4s ease;
+        z-index: 10;
+    }
+    .menu li.active {
+        background: rgba(87, 165, 255, 0.671);
+    }
+    .dashboard {
+        position: fixed;
+        overflow-y: scroll;
+        right: 5px;
+        bottom: 5px;
+        left: 5px;
+        top: 95px;
+        display: flex;
+        z-index: 5;
+        justify-content: space-around;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        animation-name: move;  
+        animation-duration: 0.9s;  
+        animation-iteration-count: 1;  
+        animation-direction: alternate;
+    }
+}
+
+@keyframes move {  
+    from{ transform: translateY(800px); }  
+    to { transform: translateX(0); }  
+}
+
+@keyframes move-computer {  
+    from{ transform: translateX(500px); }  
+    to { transform: translateX(0); }  
+}

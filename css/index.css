@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+font-family: 'Nunito Sans', sans-serif;
+display: flex;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: aliceblue;
+}
+.container {
+max-width: 400px;
+width: 100%;
+background-color: #fff;
+border-radius: 10px;
+padding: 40px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+text-align: center;
+}
+h3 {
+color: #2c3e50;
+margin-bottom: 25px;
+font-weight: bold;
+font-size: 24px;
+letter-spacing: 1px;
+}
+.form-control {
+background-color: #f7f7f7;
+color: #333;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 20px;
+}
+.btn-deni {
+background-color: #2c3e50;
+border: none;
+border-radius: 5px;
+padding: 10px 25px;
+font-weight: bold;
+font-size: 16px;
+color: #fff;
+transition: background-color 0.3s;
+}
+.btn-deni:hover {
+background-color: #34495e;
+}
+footer p {
+color: #777;
+margin-top: 30px;
+font-size: 14px;
+}
+.btn-custom {
+border: 1px solid white;
+border-radius: 7px;
+background: linear-gradient(to right, transparent, red, transparent);
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+font-weight: 700;
+color: white;
+transition: transform 0.2s, background-color 0.3s;
+width: 100%;
+max-width: 300px;
+margin: 0 auto;
+opacity: 0;
+animation: fadeInUp 1s ease forwards 1s;
+}
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.site-header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
